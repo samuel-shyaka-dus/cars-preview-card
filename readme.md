@@ -1,4 +1,4 @@
-# preview card component
+# Preview Card Component
 
 This is a cars preview card component.
 
