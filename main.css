@@ -1,0 +1,130 @@
+/* CSS File (Desktop and Mobile Designs) */
+
+/* Desktop Design */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("/fonts/BigShouldersDisplay-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("/fonts/LexendDeca-Regular.ttf");
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca";
+    font-size: 15px;
+}
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1440px;
+    padding: 120px 0 120px 0;
+    justify-content: center;
+
+}
+
+.card1 {
+    width: 260px;
+    height: 400px;
+    background-color: hsl(31, 77%, 52%);    
+}
+
+.card2 {
+    width: 260px;
+    height: 400px;
+    background-color: hsl(184, 100%, 22%);   
+}
+
+.card3 {
+    width: 260px;
+    height: 400px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 701px) {
+    .card1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+    }
+    .card3 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }    
+}
+
+img {
+    padding-top:  40px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    width: 79px;
+    height: 55 px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    padding:  8px  30px;
+    font-family:"Big Shoulders Display";
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding:  15px 30px;
+}
+
+.button{
+    padding:  55px  30px;
+    
+}
+
+a {
+    position: absolute;
+    color: #000;
+    text-decoration: none;
+    background-color:  hsl(0, 0%, 95%);
+    border: white solid 2px;  
+    padding:  8px 15px;
+    border-radius: 30px; 
+    mix-blend-mode: screen;
+}
+
+/* Active States */
+
+a:hover {
+    color: hsl(0, 0%, 95%);;
+    background-color: transparent;
+}
+
+/* Mobile Design */
+
+@media only screen and (max-width: 700px) {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        min-width: 375px;
+        align-items: center;    
+    }      
+    
+    .card1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;        
+    }
+
+    .card3 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
